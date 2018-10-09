@@ -56,7 +56,7 @@ h3 {
   position: fixed;
   z-index: 99;
   width: 100%;
-  margin: 0 0 30px;
+  margin: 0 0 30px 0;
   overflow: auto;
   color: #ffffff;
   background: #ffffff;
@@ -217,55 +217,49 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 980px) {
-  .container {
-    width: 100%;
-    padding: 0 20px;
+
+  #navtext { 
+  display: inline-block;
+  padding: 0 20px 0 0;
   }
 
-  #masthead {
-    width: 100%;
-    padding: 0 20px
+  #logo {
+    display: block;
+    margin-left: 20px;
   }
 
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-    padding: 0 20px;
+
+  #logo {
+    display: block;
+    margin-left: 20px;
   }
 
-  #masthead {
-    width: 100%;
-    padding: 0;
-    justify-content: center;
+  #navtext { 
+    display: inline-block;
+    padding: 0 20px 0 0;
   }
 
 }
 
 @media screen and (max-width: 640px) {
-  .container {
-    width: 100%;
-    padding: 0 20px;
-    }
-
-  #masthead {
-    position: static;
-    margin-bottom: 0;
-    }
 
   #logo {
-    position: relative;
-    margin: 0 20%;
+    display: block;
+    margin: 0 68px;
   }
 
   #navtext { 
-    position: relative;
-    margin: 0 10%;
+    display: block;
+    padding: 0 48px 5px;
   }
 
   #main-container {
-    margin-top: 0;
+    display: block;
+    padding-top: 200px;
+  
   }
 }
 
